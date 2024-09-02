@@ -1,5 +1,378 @@
-.App {
+body {
+  font-family: 'Mulish';
+}
+
+#App {
+  min-height: 100vh;
   text-align: center;
+  background-color: #000;
+  color: #FFFFFF;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 400;
+}
+
+.head-title {
+  padding: 10px 0px 10px 0px;
+}
+
+.container-title {
+  font-size: 70px;
+  line-height: 87px;
+  width: 100%;
+  height: 88px;
+  font-weight: 400;
+}
+
+.container-title p {
+  margin-top: 0px;
+}
+
+#frameOne {
+  width: 100%;
+  height: 80vh;
+}
+
+.frameOneImg {
+  z-index: 1;
+}
+
+.frameThreeImg {
+  position: relative;
+  z-index: 1;
+}
+
+#frameOne .frame453 {
+  border: 1px solid #EE6315;
+  border-radius: 100px;
+  background: #1C1C1C73;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  cursor: pointer;
+  position: relative;
+}
+
+.frame-title {
+  font-size: 100px;
+  line-height: 100px;
+}
+
+.frame-title p {
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+
+.frame-text {
+  font-size: 16px;
+  line-height: 24px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.frame-text p {
+  margin-top: 30px;
+  margin-bottom: 80px;
+  width: 420px;
+  height: 50px;
+}
+
+.rectangle {
+  position: absolute;
+  width: 160px;
+  height: 65px;
+  background: #98CA2F;
+  border-radius: 22px;
+  top: 0;
+  right: 0;
+  left: 80%;
+  transform: rotate(12deg);
+  z-index: 10;
+}
+
+
+/* Triangle start */
+
+.triangle {
+  position: absolute;
+  background: #CA382F;
+  text-align: left;
+  top: 95px;
+  left: 99%;
+  z-index: 10;
+}
+
+.triangle:before,
+.triangle:after {
+  content: '';
+  position: absolute;
+  background-color: inherit;
+}
+
+.triangle,
+.triangle:before,
+.triangle:after {
+  width: 4em;
+  height: 4em;
+  border-top-right-radius: 25%;
+}
+
+.triangle {
+  transform: rotate(-16deg) skewX(-30deg) scale(1, .866);
+}
+
+.triangle:before {
+  transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
+}
+
+.triangle:after {
+  transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
+}
+
+/* end */
+
+/* Circle start */
+
+.circle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: #7888DE;
+  border-radius: 50%;
+  left: 470px;
+  top: 25px;
+  z-index: 10;
+}
+
+/* end */
+
+.imgOneAlign {
+  width: 130px;
+  height: 100px;
+  transform: rotate(325deg);
+  position: absolute;
+  top: 410px;
+  right: 96px;
+  z-index: 2;
+}
+
+.imgFifteenAlign {
+  width: 260px;
+  height: 210px;
+  position: absolute;
+  top: 390px;
+  left: 20px;
+  z-index: 2;
+  filter: blur(1px) brightness(0.8);
+  transition: filter 0.3s ease-in-out;
+}
+
+.imgSixteenAlign {
+  width: 550px;
+  height: 350px;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  z-index: 2;
+
+}
+
+.imgSeventeenAlign {
+  width: 195px;
+  height: 225px;
+  position: absolute;
+  top: 25px;
+  left: 260px;
+  z-index: 3;
+}
+
+.button {
+  width: 340px;
+  height: 90px;
+  border: none;
+  border-radius: 50px;
+  background: #EE6315;
+  position: absolute;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 37px;
+  color: #FFFFFF;
+  top: 340px;
+  left: 100px;
+  z-index: 2;
+}
+
+.lineOne {
+  width: 22px;
+  border: 4.25px solid #FFFFFF;
+  position: absolute;
+  z-index: 2;
+  transform: rotate(185deg);
+  top: 360px;
+  left: 375px;
+}
+
+.lineTwo {
+  width: 22px;
+  border: 4.25px solid #FFFFFF;
+  position: absolute;
+  z-index: 2;
+  transform: rotate(185deg);
+  top: 358px;
+  left: 335px;
+}
+
+.lineThree {
+  width: 22px;
+  border: 4.25px solid #FFFFFF;
+  position: absolute;
+  z-index: 2;
+  transform: rotate(95deg);
+  top: 340px;
+  left: 357px;
+}
+
+.lineFour {
+  width: 22px;
+  border: 4.25px solid #FFFFFF;
+  position: absolute;
+  z-index: 2;
+  transform: rotate(95deg);
+  top: 380px;
+  left: 353px;
+}
+
+.imgEighteenAlign {
+  width: 135px;
+  height: 135px;
+  position: absolute;
+  z-index: 3;
+  transform: rotate(0deg);
+  top: 342px;
+  right: 60px;
+}
+
+.frameTwo {
+  display: flex;
+  flex-direction: column;
+}
+
+.imgFourteenAlign {
+  width: 109px;
+  height: 170px;
+  border-radius: 30px;
+  background: #35354B;
+}
+
+.imgThirteenAlign {
+  width: 109px;
+  height: 270px;
+  border-radius: 30px;
+  background: #35354B;
+}
+
+.imgTwonAlign {
+  width: 109px;
+  height: 170px;
+  border-radius: 30px;
+  background: #35354B;
+}
+
+.imgNineAlign {
+  width: 109px;
+  height: 233px;
+  border-radius: 30px;
+  background: #35354B;
+}
+
+.buildImgFrameTwo {
+  width: 109px;
+  height: 170px;
+  border-radius: 30px;
+  border: 1px solid #FF6B00
+}
+
+.vector {
+  width: 60px;
+  height: 30px;
+  border: 5px solid #FF6B00;
+  border-top: none;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: relative;
+  top: 35px;
+  left: 22px;
+}
+
+.vector::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #FF6B00;
+  bottom: 21px;
+  left: 0px;
+}
+
+.vectorText {
+  width: 107px;
+  height: 80px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #EE6315;
+  margin-top: 60px;
+}
+
+.imgTwonSecondPartAlign {
+  width: 109px;
+  height: 170px;
+  border-radius: 30px;
+  background: #35354B;
+}
+
+.imgTenAlign {
+  width: 109px;
+  height: 170px;
+  border-radius: 30px;
+  background: #35354B;
+}
+
+.imgTwonThirdPartAlign {
+  width: 109px;
+  height: 100px;
+  border-radius: 30px;
+  background: #35354B;
+  opacity: 0.3;
+}
+
+.imgFiveAlign {
+  width: 109px;
+  height: 170px;
+  border-radius: 30px;
+  background: #35354B;
+  opacity: 0.3;
+}
+
+.imgFourAlign {
+  width: 80px;
+  height: 74px;
+  background-color: #EE6315;
+  margin-top: 26px;
+}
+
+.walkerIconText {
+  width: 107px;
+  height: 80px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #EE6315;
+  margin-top: 20px;
 }
 
 .App-logo {
@@ -10,29 +383,5 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }
